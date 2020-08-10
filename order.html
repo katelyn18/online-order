@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>Simple Eats</title>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+    <body>
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="img/logo.png" alt="logo/home">
+            </a>
+            <div class="right">
+                <a id="home_link" href="index.html">Home</a>
+                <a id="order_link" href="order.html">Order Online</a>
+            </div>
+        </nav>
+        <h1>Online Order</h1>
+        <form action="includes/order.inc.php" method="post">
+            <label>Name:</label>
+            <input type="text" name="cname" placeholder="Name">
+            <label>Phone Number:</label>
+            <input type="text" name="cphone" placeholder="Phone">
+    
+            <div class="item1">
+                <input type="checkbox" id="cheese" name="cheese" value="Cheese">
+                <label for="cheese">Cheeseburger $1.59</label>
+    
+                <label for="cquantity">Quantity (between 1 and 10) </label>
+                <input type="number" id="cquantity" name="cquantity" min="1" max="10" value="1">
+            </div>
+            <div class="item2">
+                <input type="checkbox" id="ham" name="ham" value="Ham">
+                <label for="ham">Hamburger $1.29</label>
+    
+                <label for="hquantity">Quantity (between 1 and 10) </label>
+                <input type="number" id="hquantity" name="hquantity" min="1" max="10" value="1">
+            </div>
+            <div class="item3">
+                <input type="checkbox" id="veggie" name="veggie" value="Veggie">
+                <label for="veggie">Veggie Burger $1.00</label>
+    
+                <label for="vquantity">Quantity (between 1 and 10) </label>
+                <input type="number" id="vquantity" name="vquantity" min="1" max="10" value="1">
+            </div>
+    
+            <button type="submit" name="order_submit" disabled>Submit</button>
+    
+        </form>
+    </body>
+        <footer>
+            <p>* Disclaimer: Simple Eats is a fake restaurant that does not sell any items and does not exist in the locations mentioned above.</p>
+            <p>&copy; Katelyn Jaing <script src="scripts/date.js"></script></p>
+        </footer>
+    </html>
