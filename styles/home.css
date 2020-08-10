@@ -1,0 +1,84 @@
+
+body{
+    padding: 1.5em;
+    background-color: black;
+    color: white;
+}
+
+/* navigation */
+#rest_name{
+    display: inline-block;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.logo img{
+    width: 5%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: lightslategray;
+}
+
+.right{
+    grid-column: 2 / 3;
+}
+
+.right a{
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 0.5em;
+}
+
+/* menu */
+.menu{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#cheeseburger{
+    grid-column: 1 / 2;
+}
+
+#hamburger{
+    grid-column: 2 / 3;
+}
+
+#veggie_burger{
+    grid-column: 3 / 4;
+}
+
+.item{
+    border: 3px solid white;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.item h2, .item p{
+    text-align: center;
+}
+
+.item img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* view */
+.tab{
+    margin-left: 1.5em;
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
