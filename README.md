@@ -5,4 +5,6 @@ Customers use the home page: index.php
 
 Employees use the employee page: employee.php
 
+Can view home page using index.html; the order online submit button is currently disabled for html pages.
+
 Note: change the dbh.inc.php file to connect to your database with your servername, username, password, and database name. The SQL file provided can be used once the database has been created to create the necessary tables and inserts for the Food items and the Employees.
